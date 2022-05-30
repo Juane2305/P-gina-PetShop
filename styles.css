@@ -1,0 +1,24 @@
+#header-alto {
+    color:#F3F3F3 ;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+}
+body {
+    margin: 0;
+}
+header {
+    background-color:#F0A83E ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+.header-bajo {
+    
+}
+#imagen-central {
+    width: 1025px;
+    height: 409px;
+}
