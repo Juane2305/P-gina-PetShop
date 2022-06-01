@@ -7,16 +7,30 @@
 body {
     margin: 0;
 }
+
 header {
-    background-color:#F0A83E ;
+    background-color: #F0A83E ;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 10px;
-
 }
 
 #imagen-central {
     width: 1025px;
     height: 409px;
+}
+
+.cuerpo-pagina {    
+    margin-left: 25px;
+}
+.nav-link{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-weight: bold;
+    padding: 0px 12px;
+}
+.nav-link:hover{
+    color: white;
 }
