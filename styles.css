@@ -3,34 +3,75 @@
     background-color: #222222;
     display: flex;
     justify-content: space-between;
-}
-body {
-    margin: 0;
+    padding: 5px 25px;
 }
 
 header {
     background-color: #F0A83E ;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 14px;
 }
 
 #imagen-central {
-    width: 1025px;
-    height: 409px;
-}
-
-.cuerpo-pagina {    
-    margin-left: 25px;
+    width: 100%;
 }
 .nav-link{
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 20px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     padding: 0px 12px;
 }
 .nav-link:hover{
-    color: white;
+    color: #c03f0b;
+}
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+}
+.container-img{
+    background-image: url(img/foto-inicio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    padding: 150px;
+}
+
+.un-placer p{
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    margin-left: 70%;
+    flex-direction: column;
+    height: 6vh;
+    font-size: 25px;
+    font-weight: bold;
+}
+.comederos-descuento{
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    margin-left: 70%;
+    flex-direction: column;
+}
+.boton-comederos button{
+    border-color: rgba(00, 00, 00, .4);
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #F0A83E ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    margin-left: 82%;
+    flex-direction: column;
+    height: 6vh;
 }
