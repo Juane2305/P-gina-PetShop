@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,700;1,400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>FrontCat&Dog</title>
 </head>
 <body>
@@ -14,32 +17,32 @@
             <span>Español  ARG$</span> 
         </section>
     <header>
-        <section class="header-bajo">
-            <img src="img/Logo.png" alt="logo">
-        </section>
-
-		<section>
-            <nav>
-                <a href="" class="nav-link">Categorías</a>
-                <a href="" class="nav-link">Pets</a>
-                <a href="" class="nav-link">Nosotros</a>
-                <a href="" class="nav-link">Contactanos</a>
-            </nav>
-        </section>
+        <section class="nav-bar">
+            <div class="logo">
+                <img src="img/Logo.png" alt="logo">
+            </div>
+                <ul class="enlaces">
+                    <li class="nav-link"><a href="">Categorías</a></li>
+                    <li class="nav-link"><a href="">Pets</a></li>
+                    <li class="nav-link"><a href="">Nosotros</a></li>
+                    <li class="nav-link"><a href="">Contactanos</a></li>
+                </ul>
+                
+        </section> 
     </header>       
     <main> 
         </section>
         <div class="container-img">
             <section>
-                <div>
+                <div class="contenido-imagen">
                     <div class="un-placer"><p>¡Es un placer tenerte aquí!</p></div>
                     <div class="comederos-descuento"><p>¡Comederos en descuento!</p></div>
-                    <div class="boton-comederos"><button>COMEDEROS</button></div>
+                    <div class="boton-comederos"><input type="submit" value="COMEDEROS">
                 </div>
             </section>
         </div>
 
-        <div class="cuerpo-pagina">
+        <div class="huella">
             <section>   
                 <img src="img/huella.png" alt="huella">
                 <h1 class="productos-destacados">Productos Destacados</h1>
@@ -47,44 +50,94 @@
             </section>  
         </div>
         <div class="cuerpo-pagina">
-            <section>
-                <img src="img/churrasquito.png" alt="churrasquito">
-                <p>Juguete Churrasquito</p>
-                <p>$150</p>    
-            
-                <img src="img/comedero.png" alt="comedero">
-                <p>Comedero para perro</p>
-                <p>$250</p>
-                <img src="img/Huesito.png" alt="huesito">
-                <p>Juguete Huesito</p>
-                <p>$650</p>
-           
-            </section>
+            <section class="contenedor">
+                <div class="juguete-uno">
+                    <img src="img/churrasquito.png" alt="churrasquito"> 
+                    <span>Juguete Churrasquito</span><span class="precios">$150</span>            
+                </div>    
+                      
+                
+                <div class="juguete-dos">
+                    <img src="img/comedero.png" alt="comedero">
+                    <span>Comedero para perro</span><span class="precios">$250</span> 
+                </div>
+                    
+                <div class="juguete-tres">    
+                    <img src="img/Huesito.png" alt="huesito">
+                    <span>Juguete Huesito</span><span class="precios">$650</span>
+                </div>      
+
+            </section>  
         </div>
-        <div class="cuerpo-pagina">
+        
             <section>
                 <h2 id="contacto">Contáctanos </h2>
-                <form>
-                    <input type="name" name="Nombre-y-apellido" placeholder="Nombre y apellido" required>
-                    <input type="email" name="Correo electrónico" placeholder="Ingresá tu correo electrónico" required>
-                    <input type="text" name="numero de telefono" placeholder="teléfono" required>
-                    <input type="reset" value="Resetear">
-                    <input type="submit" value="Enviar">
+                <form id="form-contacto">
+                    <div class="form-texto">
+                        <input type="name" name="Nombre-y-apellido" placeholder="Nombre y apellido" required>
+                        <input type="email" name="Correo electrónico" placeholder="Ingresá tu correo electrónico" required>
+                        <input type="text" name="numero de telefono" placeholder="teléfono" required>
+                    </div>
+                    <div class="botones">    
+                        <div class="boton-resetear">
+                            <input type="reset" value="Resetear">
+                        </div>
+                        <div class="boton-enviar">    
+                            <input type="submit" value="Enviar">
+                        </div>    
+                    </div>
                 </form>
             </section>
-        </div>
+        
     </main>
 
     <footer>
-        <section">
-        <img src="img/Group.png" style="background-color:black;"> <span>Suscribite para más novedades</span>
-        <form>
-            <input type="email" name="correo electrónico" placeholder="Ingresá tu correo electrónico" required>
-            <input type="submit" name="suscribirme" placeholder="Suscribirme">    
-        </form>
+        <section class="suscribite">
+            <div class="mas-novedades">
+                <img src="img/enviar-correo 1.png" style="background-color:black;"> <span>Suscribite para más novedades</span>
+            </div>
+            <div class="correo">
+                <form>
+                    <input id="email" type="email" name="correo electrónico" placeholder="Ingresá tu correo electrónico" required>
+                    <input id="submit" type="submit" value="Suscribirme">    
+                </form>
+            </div>    
+        </section>
+        <section class="informacion">
+            <div class="imagenes-info">
+                <div class="ubicacion">
+                        <img id="ubi" src="img/ubicacion.png" alt="ubicacion">
+                    <div class="texto-ubicacion">
+                        <div id="localidad">
+                            <p>Localidad</p>
+                        </div>
+                        
+                    </div>    
+            </div>  
+                <div class="telefono">
+                    <div class="imagen-telefono">
+                        <img id="tel" src="img/telefono.png" alt="telefono">
+                    </div>
+                    <div class="texto-telefono">
+                        <p>Teléfono</p>
+                    </div>
+                </div>   
+                <div class="correo">    
+                    <div class="imagen-correo">
+                        <img id="correo" src="img/correo.png" alt="correo">    
+                    </div>
+                    <div class="texto-correo">
+                        <p>Correo Electrónico</p>
+                    </div>
+                </div>    
+
+            <div class="logo-footer"><img src="img/Logo-footer.png" alt="logo en footer"></div>    
         </section>
 
-        <section>
+
+
+
+        <section class="footer">
             <p align="center" style="color:white;background-color:black ;">Todos los derechos reservados Front End.</p>
         </section>
 
