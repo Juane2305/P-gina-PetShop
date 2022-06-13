@@ -61,6 +61,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.container-contenido {
+  width: 100vw;
+}
+
 .container-img {
   background-image: url(img/foto-inicio.jpg);
   background-position: center;
@@ -125,6 +129,12 @@ body {
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
+  width: 80vw;
+}
+
+.cuerpo-pagina {
+  display: flex;
+  justify-content: center;
 }
 
 .juguete-uno {
